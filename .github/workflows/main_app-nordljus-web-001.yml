@@ -18,5 +18,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'app-nordljus-web-001'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9BAB20C }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5F36995DB566444781D615A5067E46AE }}
           package: .
