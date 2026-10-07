@@ -1,4 +1,4 @@
-v<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="sv">
 <head>
     <meta charset="UTF-8">
@@ -34,7 +34,6 @@ v<!DOCTYPE html>
             position: relative;
         }
 
-        /* Ambient aurora glow in background */
         body::before {
             content: '';
             position: absolute;
@@ -123,4 +122,37 @@ v<!DOCTYPE html>
 
         .btn {
             display: inline-block;
-            background: linear-gradient(
+            background: linear-gradient(135deg, var(--aurora-cyan), var(--aurora-blue));
+            color: var(--bg-deep);
+            padding: 12px 28px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="#" class="logo">Nord<span>ljus</span></a>
+            <nav>
+                <a href="#produkter">Produkter</a>
+                <a href="#om-oss">Om oss</a>
+                <a href="#kontakt">Kontakt</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <span class="badge">Ny kollektion 2026</span>
+            <h2>Skandinavisk design möter nordiskt ljus</h2>
+            <p>Tidlös estetik och hållbara material skapade för att lysa upp hemmets alla rum.</p>
+            <a href="#produkter" class="btn">Utforska kollektionen</a>
+        </section>
+    </div>
+</body>
+</html>
